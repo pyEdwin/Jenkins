@@ -89,3 +89,80 @@
 * Click the back button in the browser window.
 
 * Click on the drop-down arrow next to the build in the Build History pane and click Console Output.
+
+#### Hands-on 2 : Building from SCM
+
+<h6> Learning Activity</h6>
+
+> Your company is ready to start utilizing the jenkins server that you installed.The first project that they would like to convert to run on jenkins is a marven project from your companies M3 marven server.This is to replace that server, but project build there have the instance name hardcoded. You are to pull the project from the git repo and build the project.This should include the call to goland that creates the index.jsp file(go build bin/makeindex). The index.jsp file needs to be tracked for version control purposes.
+
+
+* Log in to jenkins with your credentials.
+
+* Click the bell icon.
+
+* Apply Migration.
+
+* Click the bell icon.
+
+* Choose Manage Jenkins.
+
+* Choose Go to plugin manager.
+
+* Select all, Download now and install after restart
+
+* Wait to checkmark the "Restart Jenkins when installation is complete and no jobs are running" until all items have been marked for an action.
+
+* Reconnect to Jenkins.
+
+* Click Manage Jenkins.
+
+* Click Global Tool Configuration.
+
+* Under Maven installations, click Add Maven.
+
+* In the Name box, enter "M3".
+
+* Make sure Install automatically is checked.
+
+* Click Save.
+
+* Select Freestyle project.
+
+* Click OK.
+
+* Click the Source Code Management tab at the top of the screen.
+
+* Select the option for a Git repository.
+
+* Copy the git repository link and enter it into the Repository URL box.
+
+* Click Save.
+
+* Click Build Now.
+
+* Click Configure, then Build Steps.
+
+* Click Add build step and select the Invoke top-level Maven targets option.
+
+* Under Maven Version, select M3.
+
+* In the Goals box, enter "clean package".
+
+* Click Add build step and select the Execute shell option.
+
+* In the Command window, enter "bin/makeindex".
+
+* Click Add post-build action and select the Archive the artifacts option.
+
+* Inside the Archive the artifacts box, click Advanced...
+
+* Check the option for Fingerprint all archived artifacts.
+
+* In the Files to archive box, enter "index.jsp".
+
+* Click Save.
+
+* Click Build Now.
+
+* Refresh the window and click the View link next to index.jsp. Verify the contents of the index.jsp file.
