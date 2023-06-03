@@ -166,3 +166,18 @@
 * Click Build Now.
 
 * Refresh the window and click the View link next to index.jsp. Verify the contents of the index.jsp file.
+
+
+#### Hands-on 3 : Building an Application as a Freestyle Jenkins Project
+
+<h6> The Scenario>/h6>
+
+The team has asked us to configure a Jenkins project to build the train-schedule app. The source code for the application is hosted in the GitHub repository. The app already has build automation set up using gradle wrapper, and can be built with ./gradlew build. The team wants Jenkins to execute this automated build every time changes are pushed to the GitHub repository.
+
+We will need to:
+
+* Configure Jenkins to authenticate with GitHub
+* Create a freestyle project in Jenkins
+* Configure the project to build the train-schedule app
+* Set up a webhook to trigger the build whenever changes are made to the repository in GitHub
+* Configure the build to archive trainSchedule.zip as a build artifact
