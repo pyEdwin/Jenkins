@@ -185,6 +185,5 @@ We will need to:
 #### Hands-on 3 : Impliment a CI workflow
 
 <h6> The workflow will be as below:</h6>
-![Alt text](image.png)
-![image](https://github.com/pyEdwin/Jenkins/assets/87414433/33ecfb3b-9321-4249-9e6b-92b6873a91f1)
+https://github.com/pyEdwin/Jenkins/assets/87414433/33ecfb3b-9321-4249-9e6b-92b6873a91f1
 
