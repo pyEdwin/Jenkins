@@ -185,5 +185,6 @@ We will need to:
 #### Hands-on 3 : Impliment a CI workflow
 
 <h6> The workflow will be as below:</h6>
-https://github.com/pyEdwin/Jenkins/assets/87414433/33ecfb3b-9321-4249-9e6b-92b6873a91f1
+https://github.com/pyEdwin/Jenkins/assets/87414433/2c1bbe4c-c24c-4271-a07a-e392cade088a
+
 
